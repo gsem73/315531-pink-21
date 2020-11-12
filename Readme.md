@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Геннадий Семенов](https://up.htmlacademy.ru/adaptive/21/user/315531).
-* Наставник: `Неизвестно`.
+* Наставник: [Игорь Бабушкин](https://up.htmlacademy.ru/adaptive/21/user/185816).
 
 ---
 
