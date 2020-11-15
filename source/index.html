@@ -6,7 +6,194 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo logo logo--narrow">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="Открыть меню">
+        </button>
+        <ul class="main-nav__menu">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="proposal">
+        <h2 class="proposal__text">Взгляните на жизнь иначе!</h2>
+      </section>
+
+      <div class="application">
+        <a class="application__download" href="#">Скачать приложение</a>
+        <ul class="application__market-list">
+          <li class="application__market-item">
+            <a class="application__market-link">
+              <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Apple">
+            </a>
+          </li>
+          <li class="application__market-item">
+            <a class="application__market-link">
+              <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Android">
+            </a>
+          </li>
+          <li class="application__market-item">
+            <a class="application__market-link">
+              <img src="https://via.placeholder.com/40x40" width="40" height="40" alt="Windows">
+            </a>
+          </li>
+        </ul>
+        <p  class="application__comment">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+
+      <section class="advantages">
+        <h2  class="advantages__caption">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <ul class="review__list">
+          <li class="review__item">
+            <blockquote class="review__message">
+              <cite class="review__author">Николай Петров</cite>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
+          </li>
+        </ul>
+        <div class="review__toggles">
+          <button class="review__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+          <button class="review__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+          <button class="review__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+        </div>
+      </section>
+
+      <section class="tarif">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <table>
+          <tr>
+            <th></th>
+            <th class="tarif__name">База</th>
+            <th class="tarif__name">Стандарт</th>
+            <th class="tarif__name">Анлим</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th class="tarif__price">1,99 USD</th>
+            <th class="tarif__price">3,99 USD</th>
+            <th class="tarif__price">9,99 USD</th>
+          </tr>
+          <tr>
+            <td class="tarif__option">Розовый фильтр</td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+          </tr>
+          <tr>
+            <td class="tarif__option">Смайлики</td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+          </tr>
+          <tr>
+            <td class="tarif__option">Комментарии</td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+          </tr>
+        </table>
+        <div class="tarif__toggles">
+          <button class="tarif__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+          <button class="tarif__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+          <button class="tarif__toggle" type="button">
+            <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+          </button>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__caption">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <div class="contact__phone">
+          <p class="contact__title">Звоните:</p>
+          <a class="contact__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contact__email">
+          <p class="contact__title">Задавайте вопросы по электронной почте</p>
+          <a class="contact__value"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contact__addr">
+          <p class="contact__title">Приезжайте в гости:</p>
+          <p class="contact__value">ул. Большая<br>Конюшенная, 19/8</p>
+          <img class="contact__map" src="https://via.placeholder.com/320x120" width="320" height="120" alt="Карта">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo logo logo--color" href="#">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <ul class="page-footer_social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+        </a>
+      </p>
+    </footer>
 
   </body>
 </html>
