@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo logo logo--narrow">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="Открыть меню">
+        </button>
+        <ul class="main-nav__menu">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contest">
+        <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <p class="contest__descr">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="contest__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="contest__fieldset contest__fieldset--light">
+            <label class="control-label" for="surname">Фамилия</label>
+            <input class="control-text" type="text" id="surname" name="surname" value="" placeholder="Укажите фамилию *">
+            <label class="control-label" for="name">Имя</label>
+            <input class="control-text" type="text" id="name" name="name" value="" placeholder="Введите ваше имя *">
+            <label class="control-label" for="middlename">Отчество</label>
+            <input class="control-text" type="text" id="middlename" name="middlename" value="" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--dark">
+            <legend class="control-label">Ваши безбашенные достижения в путешествии</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="shark-selfie" id="shark-selfie" checked>
+                <label class="control-text" for="shark-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input type="checkbox" name="burned-beach" id="burned-beach" checked>
+                <label class="control-text" for="burned-beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input type="checkbox" name="saw-сhuck" id="saw-сhuck">
+                <label class="control-text" for="saw-сhuck">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input type="checkbox" name="bought-souvenirs" id="bought-souvenirs" checked>
+                <label class="control-text" for="bought-souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input type="checkbox" name="held-tower" id="held-tower">
+                <label class="control-text" for="held-tower">Удержал башню</label>
+              </li>
+              <li>
+                <input type="checkbox" name="trashed-hotel" id="trashed-hotel">
+                <label class="control-text" for="trashed-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--light">
+            <label class="control-label" for="phone">Номер телефона</label>
+            <input class="control-text" type="tel" id="phone" name="phone" value="" placeholder="Номер, пожалуйста">
+            <label class="control-label" for="email">Адрес почты</label>
+            <input class="control-text" type="email" id="email" name="email" value="" placeholder="Введите почту *">
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--dark">
+            <legend class="control-label">С каким приложением путешествовали?</legend>
+              <input type="radio" name="app-group" value="iOS" id="iOS" checked>
+              <label class="control-text" for="iOS">Pink для iOS</label>
+              <input type="radio" name="app-group" value="Android" id="Android">
+              <label class="control-text" for="Android">Pink на Android</label>
+              <input type="radio" name="app-group" value="Windows" id="Windows">
+              <label class="control-text" for="Windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="contest__fieldset contest__fieldset--light">
+            <label class="control-label" for="emotions">Опишите свои эмоции</label>
+            <textarea class="control-text" id="emotions" name="emotions" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="contest__submit form-button" type="submit">Отправить форму</button>
+          <p class="contest__comment">* — обязательные поля</p>
+        </form>
+    </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo logo logo--color" href="#">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <ul class="page-footer_social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>
