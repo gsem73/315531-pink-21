@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo logo logo--narrow">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="Открыть меню">
+        </button>
+        <ul class="main-nav__menu">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="catalog">
+
+      <h1 class="catalog__caption">Фотографии пользователей</h1>
+      <p  class="catalog__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+
+      <ul class="catalog__posts">
+        <li class="posting">
+          <a class="posting__photo posting__photo--panorama" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Анна</span>
+            <span class="posting__datetime">(5 минут назад)</span>
+          </p>
+          <p class="posting__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="posting__like">Нравится: 215</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Левон</span>
+            <span class="posting__datetime">(5 часов назад)</span>
+          </p>
+          <p class="posting__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="posting__like">Нравится: 356</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Антон</span>
+            <span class="posting__datetime">(12 часов назад)</span>
+          </p>
+          <p class="posting__message">Соседи будут рады!</p>
+          <p class="posting__like">Нравится: 666</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Борис</span>
+            <span class="posting__datetime">(20 часов назад)</span>
+          </p>
+          <p class="posting__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <p class="posting__like">Нравится: 215</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Сергей</span>
+            <span class="posting__datetime">(25 часов назад)</span>
+          </p>
+          <p class="posting__message">Самая кубанская в мире!</p>
+          <p class="posting__like">Нравится: 4</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Максим</span>
+            <span class="posting__datetime">(40 часов назад)</span>
+          </p>
+          <p class="posting__message">Где снег-то?</p>
+          <p class="posting__like">Нравится: 150</p>
+        </li>
+        <li class="posting">
+          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+          <p class="posting__legend">
+            <span class="posting__user">Надежда</span>
+            <span class="posting__datetime">(45 часов назад)</span>
+          </p>
+          <p class="posting__message">Всем GM и взаимные лайки!</p>
+          <p class="posting__like">Нравится: 2560</p>
+        </li>
+      </ul>
+
+      <form class="catalog__form" method="get" action="https://echo.htmlacademy.ru">
+        <label for="file">Фото для загрузки</label>
+        <input type="file" name="file" id="file">
+        <fieldset>
+          <label class="visually-hidded" for="size">Обрезка</label>
+          <input class="range-control range-control--active" type="range" id="size" name="size" min="0" max="100">
+          <label class="visually-hidded" for="brightness">Яркость</label>
+          <input class="range-control range-control--hide" type="range" id="brightness" name="brightness" min="0" max="100">
+          <label class="visually-hidded" for="contrast">Контрастность</label>
+          <input class="range-control range-control--hide" type="range" id="contrast" name="contrast" min="0" max="100">
+        </fieldset>
+        <button class="button submit-button" type="submit">Запостить</button>
+        <button class="button cancel-button" type="button">Отмена</button>
+      </form>
+
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo logo logo--color" href="#">
+        <img src="https://via.placeholder.com/80x40" width="80" height="40" alt="Логотип компании Pink">
+      </a>
+      <ul class="page-footer_social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img class="social__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__icon" src="https://via.placeholder.com/20x20" width="20" height="20" alt="Логотип компании html academy">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>
