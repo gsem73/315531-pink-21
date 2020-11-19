@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -83,7 +84,7 @@
           <li class="review__item">
             <blockquote class="review__message">
               <cite class="review__author">Николай Петров</cite>
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </li>
         </ul>
@@ -102,36 +103,62 @@
 
       <section class="tarif">
         <h2 class="visually-hidden">Тарифы</h2>
-        <table>
+        <table class="tarif__table">
           <tr>
-            <th></th>
-            <th class="tarif__name">База</th>
-            <th class="tarif__name">Стандарт</th>
-            <th class="tarif__name">Анлим</th>
+            <th class="tarif__head">
+              <p class="tarif__name">База</p>
+              <p class="tarif__price">1,99 USD</p>
+            </th>
+            <th class="tarif__head">
+              <p class="tarif__name">Стандарт</p>
+              <p class="tarif__price">3,99 USD</p>
+            </th>
+            <th class="tarif__head">
+              <p class="tarif__name">Анлим</p>
+              <p class="tarif__price">9,99 USD</p>
+            </th>
           </tr>
           <tr>
-            <th></th>
-            <th class="tarif__price">1,99 USD</th>
-            <th class="tarif__price">3,99 USD</th>
-            <th class="tarif__price">9,99 USD</th>
+            <td class="tarif__cell">
+              <span class="tarif__option">Розовый фильтр</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Розовый фильтр</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Розовый фильтр</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
           </tr>
           <tr>
-            <td class="tarif__option">Розовый фильтр</td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Смайлики</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Смайлики</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Смайлики</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
           </tr>
           <tr>
-            <td class="tarif__option">Смайлики</td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-          </tr>
-          <tr>
-            <td class="tarif__option">Комментарии</td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
-            <td><img src="https://via.placeholder.com/20x20" width="20" height="20" alt=""></td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Комментарии</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Комментарии</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
+            <td class="tarif__cell">
+              <span class="tarif__option">Комментарии</span>
+              <img src="https://via.placeholder.com/20x20" width="20" height="20" alt="">
+            </td>
           </tr>
         </table>
         <div class="tarif__toggles">

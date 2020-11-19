@@ -1,0 +1,24 @@
+.main-nav {
+  outline: 1px dotted tomato;
+}
+
+.main-nav__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 25px;
+  text-align: center;
+  background-color: $base-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $base-white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+}
