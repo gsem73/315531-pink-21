@@ -8,17 +8,54 @@
   margin: 0;
 }
 
+.main-nav__item {
+  background-color: $base-dark;
+}
+
+// Пункт меню
 .main-nav__link {
   display: block;
   padding: 25px;
   text-align: center;
-  background-color: $base-dark;
   text-decoration: none;
-  text-transform: uppercase;
   color: $base-white;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 32px;
+  // Пункт в выпадающем меню
+  &--dropdown {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: $base-red;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  // Пункт в постоянном меню
+  &--permanent {
+    text-transform: none;
+    font-weight: normal;
+
+    &:hover {
+      color: $base-red;
+    }
+
+    &:active {
+      color: $base-white;
+      opacity: 0.3;
+    }
+  }
+  // Активный пункт меню
+  &--active {
+    .main-nav__underline {
+      display: inline-block;
+      padding: 5px;
+      border-bottom: 2px solid $base-white;
+    }
+  }
 }

@@ -25,4 +25,14 @@
   line-height: 33px;
   color: $base-red;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $base-dark;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgba($base-dark, 0.3);
+  }
 }
