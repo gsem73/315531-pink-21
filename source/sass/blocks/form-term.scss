@@ -1,0 +1,19 @@
+.form-term {
+  display: flex;
+}
+
+.form-term__name {
+  @include form-label;
+  text-transform: uppercase;
+}
+
+.form-term__def {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $base-dark;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}

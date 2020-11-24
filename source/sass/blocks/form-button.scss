@@ -1,0 +1,26 @@
+.form-button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $base-white;
+  padding: 23px 45px;
+  background-color: $base-green;
+  border: 2px solid $base-green;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: rgba($base-white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $special-grey;
+    border: 2px solid $special-grey;
+  }
+}

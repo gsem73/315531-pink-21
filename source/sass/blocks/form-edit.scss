@@ -1,0 +1,15 @@
+.form-edit {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-edit__input {
+  @include form-text;
+  padding: 23px 20px;
+  border: 2px solid $special-grey;
+}
+
+.form-edit__label {
+  @include form-label;
+  margin-bottom: 17px;
+}

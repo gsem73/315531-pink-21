@@ -1,0 +1,21 @@
+.form-checkgroup {
+  border: none;
+  background-color: $base-grey;
+  padding: 0;
+  margin: 0;
+
+  &__legend {
+    @include form-label;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    margin-top: 47px;
+    margin-bottom: 47px;
+  }
+}

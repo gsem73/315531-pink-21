@@ -1,0 +1,16 @@
+@mixin form-text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: $base-dark;
+}
+
+@mixin form-label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $base-red;
+  text-transform: uppercase;
+}

@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
+@import "mixin.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/proposal.scss";
 @import "blocks/application.scss";
@@ -9,3 +10,13 @@
 @import "blocks/tarif.scss";
 @import "blocks/contact.scss";
 @import "blocks/copyright.scss";
+@import "blocks/form-button.scss";
+@import "blocks/form-checkbox.scss";
+@import "blocks/form-radiobox.scss";
+@import "blocks/form-edit.scss";
+@import "blocks/form-fieldset.scss";
+@import "blocks/form-checkgroup.scss";
+@import "blocks/form-radiogroup.scss";
+@import "blocks/form-term.scss";
+@import "blocks/head-liner.scss";
+@import "blocks/text-content.scss";
