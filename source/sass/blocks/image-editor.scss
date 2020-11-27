@@ -1,0 +1,14 @@
+.image-editor {
+  background-color: $base-grey;
+}
+
+.image-editor__preview {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-editor__tools {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,43 @@
+.posting-button {
+  min-width: 280px;
+  padding: 21px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 3px;
+
+  &--submit {
+    color: $base-red;
+    border-color: $base-red;
+
+    &:hover {
+      color: $base-white;
+      background-color: $base-red;
+    }
+
+    &:active {
+      color: rgba($base-white, 0.3);
+    }
+  }
+
+  &--cancel {
+    color: rgba($base-dark, 0.1);
+    border-color: rgba($base-dark, 0.1);
+
+    &:hover {
+      color: rgba($base-dark, 0.3);
+      border-color: rgba($base-dark, 0.3);
+    }
+
+    &:active {
+      color: rgba($base-white, 0.3);
+      background-color: rgba($base-dark, 0.3);
+    }
+  }
+}

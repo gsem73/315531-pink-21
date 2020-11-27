@@ -1,0 +1,19 @@
+.range-control {
+  &::-webkit-slider-thumb {
+    margin-top: -$thumb-size / 2;
+
+    @include range-thumb;
+  }
+
+  &::-moz-range-thumb {
+    @include range-thumb;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @include range-track;
+  }
+
+  &::-moz-range-track {
+    @include range-track;
+  }
+}

@@ -1,0 +1,14 @@
+.posting-control {
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.posting-control__item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
