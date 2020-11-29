@@ -1,0 +1,77 @@
+.posting {
+  background-color: $base-grey;
+}
+
+.posting__link {
+  display: block;
+  outline: 1px solid red;
+
+  &--wide {
+    margin-left: -$page-padding;
+    margin-right: -$page-padding;
+    position: relative;
+  }
+}
+
+.posting__label {
+  position: absolute;
+  top: 0;
+  right: $page-padding;
+  padding: 14px 20px;
+  margin: 0;
+  background-color: $base-red;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-white;
+}
+
+.posting__photo {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+}
+
+.posting__user {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-dark;
+}
+
+.posting__datetime {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-dark;
+}
+
+.posting__message {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-dark;
+}
+
+.posting__like {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-red;
+  margin: 0;
+}

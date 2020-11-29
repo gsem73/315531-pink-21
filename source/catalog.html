@@ -17,29 +17,46 @@
         </button>
         <ul class="main-nav__menu">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
+            <a class="main-nav__link main-nav__link--dropdown" href="index.html">
+              <span class="main-nav__underline">Главная</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
+            <a class="main-nav__link main-nav__link--permanent" href="catalog.html">
+              <span class="main-nav__underline">Фотографии</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Конкурс</a>
+            <a class="main-nav__link main-nav__link--active" href="form.html">
+              <span class="main-nav__underline">Конкурс</span>
+            </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
+            <a class="main-nav__link main-nav__link--dropdown" href="#">
+              <span class="main-nav__underline">HTML Academy</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="catalog">
+    <main>
 
-      <h1 class="catalog__caption">Фотографии пользователей</h1>
-      <p  class="catalog__descr">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="head-liner">
+        <h1 class="head-liner__title">Фотографии пользователей</h1>
+      </div>
 
-      <ul class="catalog__posts">
-        <li class="posting">
-          <a class="posting__photo posting__photo--panorama" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+      <div class="text-content">
+        <p class="text-content__paragraph">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+
+      <ul class="posting-list">
+
+        <li class="posting-list__item posting">
+          <a class="posting__link posting__link--wide" href="#">
+            <p class="posting__label">Панорама дня</p>
+            <img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+          </a>
           <p class="posting__legend">
             <span class="posting__user">Анна</span>
             <span class="posting__datetime">(5 минут назад)</span>
@@ -47,8 +64,9 @@
           <p class="posting__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <p class="posting__like">Нравится: 215</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Левон</span>
             <span class="posting__datetime">(5 часов назад)</span>
@@ -56,8 +74,8 @@
           <p class="posting__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="posting__like">Нравится: 356</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Антон</span>
             <span class="posting__datetime">(12 часов назад)</span>
@@ -65,8 +83,8 @@
           <p class="posting__message">Соседи будут рады!</p>
           <p class="posting__like">Нравится: 666</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Борис</span>
             <span class="posting__datetime">(20 часов назад)</span>
@@ -74,8 +92,8 @@
           <p class="posting__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="posting__like">Нравится: 215</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Сергей</span>
             <span class="posting__datetime">(25 часов назад)</span>
@@ -83,8 +101,8 @@
           <p class="posting__message">Самая кубанская в мире!</p>
           <p class="posting__like">Нравится: 4</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Максим</span>
             <span class="posting__datetime">(40 часов назад)</span>
@@ -92,8 +110,8 @@
           <p class="posting__message">Где снег-то?</p>
           <p class="posting__like">Нравится: 150</p>
         </li>
-        <li class="posting">
-          <a class="posting__photo" href="#"><img src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
+        <li class="posting-list__item posting">
+          <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
           <p class="posting__legend">
             <span class="posting__user">Надежда</span>
             <span class="posting__datetime">(45 часов назад)</span>
@@ -103,19 +121,24 @@
         </li>
       </ul>
 
-      <form class="catalog__form" method="get" action="https://echo.htmlacademy.ru">
-        <label for="file">Фото для загрузки</label>
-        <input type="file" name="file" id="file">
-        <fieldset>
-          <label class="visually-hidded" for="size">Обрезка</label>
-          <input class="range-control range-control--active" type="range" id="size" name="size" min="0" max="100">
-          <label class="visually-hidded" for="brightness">Яркость</label>
-          <input class="range-control range-control--hide" type="range" id="brightness" name="brightness" min="0" max="100">
-          <label class="visually-hidded" for="contrast">Контрастность</label>
-          <input class="range-control range-control--hide" type="range" id="contrast" name="contrast" min="0" max="100">
+      <div class="text-content">
+        <p class="text-content__paragraph">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <form class="image-editor" method="get" action="https://echo.htmlacademy.ru">
+        <img class="image-editor__preview" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+        <fieldset  class="image-editor__tools">
+          <label for="size">Обрезка</label>
+          <input class="range-control" type="range" id="size" name="size" min="0" max="100">
+          <label for="brightness">Яркость</label>
+          <input class="range-control" type="range" id="brightness" name="brightness" min="0" max="100">
+          <label for="contrast">Контрастность</label>
+          <input class="range-control" type="range" id="contrast" name="contrast" min="0" max="100">
         </fieldset>
-        <button class="button submit-button" type="submit">Запостить</button>
-        <button class="button cancel-button" type="button">Отмена</button>
+        <fieldset class="posting-control">
+          <button class="posting-control__item posting-button posting-button--submit" type="submit">Запостить</button>
+          <button class="posting-control__item posting-button posting-button--cancel" type="button">Отмена</button>
+        </fieldset>
       </form>
 
     </main>

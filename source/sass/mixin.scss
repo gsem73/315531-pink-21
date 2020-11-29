@@ -14,3 +14,16 @@
   color: $base-red;
   text-transform: uppercase;
 }
+
+@mixin range-thumb {
+  width: $thumb-size;
+  height: $thumb-size;
+  background-color: $base-white;
+  border-radius: 50%;
+  border: 2px solid $base-red;
+}
+
+@mixin range-track {
+  height: 2px;
+  background-color: $base-dark;
+}
