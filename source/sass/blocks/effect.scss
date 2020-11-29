@@ -1,0 +1,12 @@
+.effect {
+  background-color: $base-white;
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-size) {
+    background-color: $base-grey;
+  }
+}

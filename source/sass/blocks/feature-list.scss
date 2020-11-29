@@ -1,0 +1,27 @@
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feature-list__item {
+  grid-column-start: auto;
+
+  @media (min-width: $tablet-size) {
+    grid-column-start: 2;
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-column-start: auto;
+  }
+}

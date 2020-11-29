@@ -1,0 +1,22 @@
+.base-caption {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $base-dark;
+  grid-column: span 1;
+
+  @media (min-width: $tablet-size) {
+    font-size: 40px;
+    line-height: 54px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 50px;
+    line-height: 68px;
+    grid-column: span 3;
+  }
+}

@@ -1,3 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
@@ -5,4 +11,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-dark;
+}
+
+.copyright__icon {
+  display: block;
+  width: 100%;
+  height: auto;
 }
