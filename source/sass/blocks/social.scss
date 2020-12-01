@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 14px;
+}

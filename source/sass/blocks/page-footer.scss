@@ -1,0 +1,22 @@
+.page-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-size) {
+    justify-self: start;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: $tablet-size) {
+    justify-self: end;
+  }
+}

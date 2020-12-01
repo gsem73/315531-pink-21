@@ -1,0 +1,9 @@
+.tariff-toggle {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
+}

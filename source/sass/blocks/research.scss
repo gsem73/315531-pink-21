@@ -1,0 +1,40 @@
+.research {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-size) {
+    padding-left: 50%;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: calc(100% / 3);
+  }
+}
+
+.research__caption {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: $base_black;
+}
+
+.research__content {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $base-dark;
+}
+
+.research__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+  color: $base-red;
+}

@@ -1,10 +1,77 @@
-.review__author {
+.review {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "message-area" "control-area";
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: 60px 1fr 60px;
+    grid-template-areas: "prev-area message-area next-area";
+  }
+}
+
+.review__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review__item {
+  padding: 0;
+  margin: 0;
+}
+
+.review__message {
+  grid-area: message-area;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__link {
+  text-align: center;
+  order: 1;
+
+  @media (min-width: $tablet-size) {
+    order: 2;
+  }
+}
+
+.review__author-name {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: $base-black;
+
+  @media (min-width: $tablet-size) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 24px;
+  }
+}
+
+.review__author-info {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-dark;
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+  }
 }
 
 .review__text {
@@ -14,4 +81,43 @@
   font-size: 14px;
   line-height: 30px;
   color: $base-dark;
+  text-align: center;
+  order: 2;
+
+  @media (min-width: $tablet-size) {
+    font-size: 18px;
+    order: 1;
+  }
+}
+
+.review__control-button {
+  grid-area: control-area;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
+}
+
+.review__prev-button {
+  grid-area: prev-area;
+  display: none;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $desktop-size) {
+    display: block;
+  }
+}
+
+.review__next-button {
+  grid-area: next-area;
+  display: none;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $desktop-size) {
+    display: block;
+  }
 }

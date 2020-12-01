@@ -1,61 +1,74 @@
 .main-nav {
-  outline: 1px dotted tomato;
+  background-color: $base-dark;
+  padding-top: 20px;
+}
+
+.main-nav__layout {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
+
+  @media (min-width: $tablet-size) {
+    grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-areas: "logo-area menu-area ";
+  }
+}
+
+.main-nav__logo {
+  grid-area: logo-area;
+  justify-self: start;
+  align-self: center;
+}
+
+.main-nav__toggle {
+  grid-area: toggle-area;
+  justify-self: end;
+  align-self: center;
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
 }
 
 .main-nav__menu {
+  grid-area: menu-area;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-size) {
+    justify-self: end;
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
-  background-color: $base-dark;
+  margin-left: 20px;
 }
 
-// Пункт меню
 .main-nav__link {
   display: block;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   text-decoration: none;
   color: $base-white;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
+  font-weight: bold;
   font-size: 18px;
-  line-height: 32px;
-  // Пункт в выпадающем меню
-  &--dropdown {
-    text-transform: uppercase;
-    font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
 
-    &:hover {
-      color: $base-red;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
-  // Пункт в постоянном меню
-  &--permanent {
-    text-transform: none;
+  @media (min-width: $desktop-size) {
     font-weight: normal;
-
-    &:hover {
-      color: $base-red;
-    }
-
-    &:active {
-      color: $base-white;
-      opacity: 0.3;
-    }
-  }
-  // Активный пункт меню
-  &--active {
-    .main-nav__underline {
-      display: inline-block;
-      padding: 5px;
-      border-bottom: 2px solid $base-white;
-    }
+    text-transform: none;
   }
 }

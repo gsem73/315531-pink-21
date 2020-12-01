@@ -12,8 +12,14 @@ $special-green: #1c9b5e;
 
 // Отступ от края страницы
 
-$page-padding: 80px;
+$page-padding: 20px;
 
 // Параметры range
 
 $thumb-size: 14px;
+
+// Breakpoints
+
+$mobile-size: 320px;
+$tablet-size: 660px;
+$desktop-size: 984px;

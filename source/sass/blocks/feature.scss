@@ -1,21 +1,4 @@
-.advantages__list {
-  background-color: $base-grey;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.advantages__caption {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  color: $base-dark;
-}
-
-.advantages__title {
+.feature__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -25,7 +8,7 @@
   color: $base_black;
 }
 
-.advantages__description {
+.feature__description {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;

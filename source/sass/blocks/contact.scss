@@ -1,11 +1,54 @@
-.contact__caption {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  color: $base-dark;
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contact__phone {
+  grid-column: span 1;
+  order: 1;
+
+  @media (min-width: $tablet-size) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-size) {
+    order: 1;
+  }
+}
+
+.contact__email {
+  order: 2;
+
+  @media (min-width: $tablet-size) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-size) {
+    order: 3;
+  }
+}
+
+.contact__addr {
+  grid-column: span 1;
+  order: 3;
+
+  @media (min-width: $tablet-size) {
+    grid-column: span 2;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-column: span 1;
+    order: 2;
+  }
 }
 
 .contact__title {
@@ -15,9 +58,11 @@
   font-size: 18px;
   line-height: 25px;
   color: $base-dark;
+  text-align: center;
 }
 
 .contact__value {
+  display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -25,6 +70,7 @@
   line-height: 33px;
   color: $base-red;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     text-decoration: underline;
