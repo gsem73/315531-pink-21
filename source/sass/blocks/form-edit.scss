@@ -1,15 +1,32 @@
 .form-edit {
   display: flex;
   flex-direction: column;
+
+  &--wide {
+    @media (min-width: $tablet-size) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &--tall {
+    @media (min-width: $tablet-size) {
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .form-edit__input {
   @include form-text;
   padding: 23px 20px;
   border: 2px solid $special-grey;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-edit__label {
   @include form-label;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+  margin-right: 18px;
 }

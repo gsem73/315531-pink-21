@@ -4,18 +4,30 @@
   padding: 0;
   margin: 0;
 
-  &__legend {
-    @include form-label;
+  @media (min-width: $tablet-size) {
+    background-color: transparent;
+    border: 2px solid $base-grey;
   }
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.form-checkgroup__legend {
+  @include form-label;
+}
 
-  &__item {
-    margin-top: 47px;
-    margin-bottom: 47px;
+.form-checkgroup__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.form-checkgroup__item {
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
