@@ -10,4 +10,16 @@
   line-height: 30px;
   text-align: center;
   color: $base-dark;
+  padding: 0;
+
+  @media (min-width: $tablet-size) {
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }

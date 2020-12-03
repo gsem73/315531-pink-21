@@ -1,0 +1,58 @@
+.contest-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "participant-area"
+    "achievement-area"
+    "contact-area"
+    "platform-area"
+    "message-area"
+    "button-area"
+    "comment-area";
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "participant-area participant-area"
+      "platform-area platform-area"
+      "contact-area contact-area"
+      "achievement-area achievement-area"
+      "message-area message-area"
+      "button-area comment-area";
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "participant-area platform-area"
+      "contact-area contact-area"
+      "achievement-area achievement-area"
+      "message-area message-area"
+      "button-area comment-area";
+  }
+}
+
+.contest-form__participant {
+  grid-area: participant-area;
+}
+
+.contest-form__achievement {
+  grid-area: achievement-area;
+}
+
+.contest-form__contact {
+  grid-area: contact-area;
+}
+
+.contest-form__platform {
+  grid-area: platform-area;
+}
+
+.contest-form__message {
+  grid-area: message-area;
+}
+
+.contest-form__button {
+  grid-area: button-area;
+}
+
+.contest-form__comment {
+  grid-area: comment-area;
+}
