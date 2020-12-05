@@ -1,14 +1,28 @@
 .image-editor {
   background-color: $base-grey;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "preview-area" "tools-area" "button-area";
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "preview-area tools-area" "preview-area button-area";
+  }
 }
 
 .image-editor__preview {
   display: block;
   margin: 0 auto;
+  grid-area: preview-area;
 }
 
 .image-editor__tools {
   border: none;
   display: flex;
   flex-direction: column;
+  grid-area: tools-area;
+}
+
+.image-editor__button {
+  grid-area: button-area;
 }

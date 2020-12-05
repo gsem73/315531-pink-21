@@ -1,22 +1,17 @@
-.posting {
+.posting__content {
   background-color: $base-grey;
+  padding: 10px;
+  position: relative;
 }
 
 .posting__link {
   display: block;
-  outline: 1px solid red;
-
-  &--wide {
-    margin-left: -$page-padding;
-    margin-right: -$page-padding;
-    position: relative;
-  }
 }
 
 .posting__label {
   position: absolute;
-  top: 0;
-  right: $page-padding;
+  top: -160px;
+  right: 0;
   padding: 14px 20px;
   margin: 0;
   background-color: $base-red;
@@ -33,7 +28,7 @@
 .posting__photo {
   width: 100%;
   height: 180px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
