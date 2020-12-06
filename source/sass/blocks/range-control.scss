@@ -1,5 +1,13 @@
 .range-control {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  //-webkit-appearance: none;
+  background-color: transparent;
+
   &::-webkit-slider-thumb {
+    //-webkit-appearance: none;
     margin-top: -$thumb-size / 2;
 
     @include range-thumb;

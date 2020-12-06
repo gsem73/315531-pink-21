@@ -1,10 +1,22 @@
 .posting-list {
   list-style: none;
   padding: 0;
-  margin: 0 $page-padding;
+  margin: 0;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .posting-list__item {
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
 }

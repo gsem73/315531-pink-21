@@ -6,6 +6,10 @@
   border: none;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-size) {
+    flex-direction: row;
+  }
 }
 
 .posting-control__item {
