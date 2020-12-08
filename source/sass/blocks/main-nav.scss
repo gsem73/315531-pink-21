@@ -1,19 +1,58 @@
 .main-nav {
-  background-color: $base-dark;
-  padding-top: 20px;
+  background-color: transparent;
+
+  &--open {
+    background-color: $base-dark;
+
+    @media (min-width: $desktop-size) {
+      background-color: transparent;
+    }
+
+    & .icon-open {
+      display: none;
+    }
+
+    & .icon-close {
+      display: block;
+    }
+
+    & .main-nav__menu {
+      display: flex;
+    }
+  }
+
+  &--close {
+    & .icon-open {
+      display: block;
+    }
+
+    & .icon-close {
+      display: none;
+    }
+
+    & .main-nav__menu {
+      display: none;
+
+      @media (min-width: $desktop-size) {
+        display: flex;
+      }
+    }
+  }
 }
 
 .main-nav__layout {
   display: grid;
-  grid-template-columns: 148px 1fr;
-  grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
+  grid-template-columns: minmax($page-padding, 1fr) 150px minmax(0, $desktop-size - 150px) minmax($page-padding, 1fr);
+  grid-template-areas: ". logo-area toggle-area ."
+    "menu-area  menu-area menu-area  menu-area";
 
   @media (min-width: $tablet-size) {
-    grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
+    grid-template-areas: ". logo-area toggle-area ."
+      "menu-area  menu-area menu-area  menu-area";
   }
 
   @media (min-width: $desktop-size) {
-    grid-template-areas: "logo-area menu-area ";
+    grid-template-areas: ". logo-area menu-area .";
   }
 }
 
@@ -21,12 +60,23 @@
   grid-area: logo-area;
   justify-self: start;
   align-self: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
 }
 
 .main-nav__toggle {
   grid-area: toggle-area;
   justify-self: end;
   align-self: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 
   @media (min-width: $desktop-size) {
     display: none;
@@ -38,25 +88,31 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-self: center;
+  justify-self: stretch;
   align-self: center;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid $base-black;
 
   @media (min-width: $desktop-size) {
     justify-self: end;
     flex-direction: row;
+    border-top: none;
   }
 }
 
 .main-nav__item {
-  margin-left: 20px;
+  border-top: 1px solid rgba($base-white, 0.15);
+  border-bottom: 1px solid $base-black;
+
+  @media (min-width: $desktop-size) {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .main-nav__link {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
   text-align: center;
   text-decoration: none;
   color: $base-white;
@@ -66,9 +122,18 @@
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 25px;
+
+
+  @media (min-width: $tablet-size) {
+    padding-top: 21px;
+    padding-bottom: 23px;
+  }
 
   @media (min-width: $desktop-size) {
     font-weight: normal;
     text-transform: none;
+    margin-left: 80px;
   }
 }

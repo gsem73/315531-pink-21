@@ -15,8 +15,9 @@
   line-height: 30px;
   text-align: center;
   color: $base-white;
-  min-height: 160px;
+  min-height: 260px;
   width: 100%;
+  padding-top: 110px;
 
   @media (min-width: $tablet-size) {
     width: 50%;
