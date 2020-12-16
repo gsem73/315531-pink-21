@@ -1,5 +1,4 @@
 // Цвета
-
 $base-white: #ffffff;
 $base-red: #d22856;
 $base-green: #2aab6d;
@@ -10,16 +9,20 @@ $special-dark: #1d2631;
 $special-grey: #e5e5e5;
 $special-green: #1c9b5e;
 
-// Отступ от края страницы
+// Из макета
+$mobile-content: 280px;
+$tablet-content: 620px;
+$desktop-content: 940px;
 
-$page-padding: 20px;
-
-// Параметры range
-
-$thumb-size: 14px;
-
-// Breakpoints
-
+// Breakpoints, критерий Б11
 $mobile-size: 320px;
 $tablet-size: 660px;
-$desktop-size: 942px;
+$desktop-size: 960px;
+
+// Параметры range
+$thumb-size: 14px;
+
+// Минимальные размеры свернутого меню
+$mobile-menu-height: 69px;
+$tablet-menu-height: 109px;
+$desktop-menu-height: 110px;

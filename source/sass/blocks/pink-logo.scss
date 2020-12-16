@@ -1,15 +1,15 @@
 .pink-logo {
   display: block;
   width: 74px;
-  height: 23px;
+  height: 24px;
 
   @media (min-width: $tablet-size) {
     width: 145px;
-    height: 40px;
+    height: 56px;
   }
 
   @media (min-width: $desktop-size) {
     width: 147px;
-    height: 40px;
+    height: 56px;
   }
 }

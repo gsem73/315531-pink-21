@@ -1,58 +1,89 @@
 .main-nav {
-  background-color: transparent;
+  background-color: rgba($base-black, 0.3);
 
-  &--open {
+  &--opened {
     background-color: $base-dark;
 
     @media (min-width: $desktop-size) {
-      background-color: transparent;
+      background-color: rgba($base-black, 0.3);
     }
 
-    & .icon-open {
+    .main-nav__menu {
+      display: flex;
+    }
+
+    .main-nav__icon--open {
       display: none;
     }
 
-    & .icon-close {
+    .main-nav__icon--close {
       display: block;
-    }
-
-    & .main-nav__menu {
-      display: flex;
     }
   }
 
-  &--close {
-    & .icon-open {
+  &--nojs {
+    background-color: $base-dark;
+
+    @media (min-width: $desktop-size) {
+      background-color: rgba($base-black, 0.3);
+    }
+
+    .main-nav__menu {
+      display: flex;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__icon--open {
+      display: none;
+    }
+
+    .main-nav__icon--close {
+      display: block;
+    }
+  }
+
+  &--closed {
+    background-color: rgba($base-black, 0.3);
+
+    .main-nav__menu {
+      display: none;
+    }
+
+    @media (min-width: $desktop-size) {
+      .main-nav__menu {
+        display: flex;
+      }
+    }
+
+    .main-nav__icon--open {
       display: block;
     }
 
-    & .icon-close {
+    .main-nav__icon--close {
       display: none;
-    }
-
-    & .main-nav__menu {
-      display: none;
-
-      @media (min-width: $desktop-size) {
-        display: flex;
-      }
     }
   }
 }
 
 .main-nav__layout {
   display: grid;
-  grid-template-columns: minmax($page-padding, 1fr) 150px minmax(0, $desktop-size - 150px) minmax($page-padding, 1fr);
-  grid-template-areas: ". logo-area toggle-area ."
-    "menu-area  menu-area menu-area  menu-area";
+  grid-template-rows: minmax($mobile-menu-height, max-content) auto;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
 
   @media (min-width: $tablet-size) {
-    grid-template-areas: ". logo-area toggle-area ."
-      "menu-area  menu-area menu-area  menu-area";
+    grid-template-rows: minmax($tablet-menu-height, max-content) auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo-area toggle-area" "menu-area  menu-area ";
   }
 
   @media (min-width: $desktop-size) {
-    grid-template-areas: ". logo-area menu-area .";
+    grid-template-rows: minmax($desktop-menu-height, max-content) auto;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "logo-area menu-area";
   }
 }
 
@@ -60,13 +91,6 @@
   grid-area: logo-area;
   justify-self: start;
   align-self: center;
-  padding-top: 23px;
-  padding-bottom: 23px;
-
-  @media (min-width: $tablet-size) {
-    padding-top: 27px;
-    padding-bottom: 42px;
-  }
 }
 
 .main-nav__toggle {
@@ -88,6 +112,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
   justify-self: stretch;
   align-self: center;
   display: flex;
@@ -98,6 +124,7 @@
     justify-self: end;
     flex-direction: row;
     border-top: none;
+    margin: 0;
   }
 }
 
