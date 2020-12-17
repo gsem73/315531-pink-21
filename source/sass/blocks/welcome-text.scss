@@ -1,0 +1,25 @@
+.welcome-text {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $base-white;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 95px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 99px;
+    margin-bottom: 5px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
