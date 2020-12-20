@@ -14,5 +14,9 @@
 }
 
 .offer__content {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
   background-color: $base-grey;
+  background-image: url("../img/polygon.svg");
 }

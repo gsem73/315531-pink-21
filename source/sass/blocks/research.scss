@@ -1,13 +1,54 @@
 .research {
   padding-top: 40px;
   padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (min-width: $tablet-size) {
-    padding-left: 50%;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-size) {
-    padding-left: calc(100% / 3);
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  &::after {
+    @media (min-width: $tablet-size) {
+      content: "";
+      display: block;
+      width: 238px;
+      height: 268px;
+      background-image: url("../img/timer.svg");
+      background-position: center;
+      background-size: 100% 100%;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+    }
+
+    @media (min-width: $desktop-size) {
+      content: "";
+      display: block;
+      width: 298px;
+      height: 345px;
+      background-position: center;
+      background-size: 100% 100%;
+      background-image: url("../img/timer.svg");
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+    }
+  }
+}
+
+
+.research__item {
+  grid-column: 2 / 3;
+
+  @media (min-width: $desktop-size) {
+    padding-left: 43px;
+    min-height: 361px;
   }
 }
 
@@ -18,23 +59,46 @@
   font-size: 30px;
   line-height: 36px;
   color: $base_black;
+  max-width: 80%;
+  margin-top: 36px;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-size) {
+    max-width: none;
+    margin-top: 100px;
+    margin-bottom: 22px;
+  }
 }
 
 .research__content {
+  display: block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: $base-dark;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .research__link {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   text-decoration: underline;
   color: $base-red;
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

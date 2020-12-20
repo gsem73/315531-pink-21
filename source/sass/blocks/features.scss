@@ -1,0 +1,159 @@
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 69px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 57px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.features__item {
+  position: relative;
+  grid-column-start: auto;
+  padding: 16px 0;
+
+  @media (min-width: $tablet-size) {
+    grid-column-start: 2;
+    padding: 18px 0;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding: 356px 30px 0;
+    grid-column-start: auto;
+  }
+
+  &--mood::after {
+    @media (min-width: $desktop-size) {
+      content: "";
+      display: block;
+      height: 301px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("../img/phone-mood-desktop.png");
+    }
+  }
+
+  &--world::after {
+    @media (min-width: $desktop-size) {
+      content: "";
+      display: block;
+      height: 301px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("../img/phone-world-desktop.png");
+    }
+  }
+
+  &--friend {
+    padding-bottom: 318px;
+
+    @media (min-width: $tablet-size) {
+      padding-bottom: 41px;
+    }
+
+    @media (min-width: $desktop-size) {
+      padding-bottom: 0;
+    }
+
+
+    &::after {
+      content: "";
+      display: block;
+      height: 276px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-image: url("../img/phone-friend-mobile.png");
+
+      @media (min-width: $tablet-size) {
+        height: 480px;
+        position: absolute;
+        left: -100%;
+        right: 100%;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: url("../img/phone-friend-tablet.png");
+      }
+
+      @media (min-width: $desktop-size) {
+        height: 301px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-image: url("../img/phone-friend-desktop.png");
+      }
+    }
+  }
+}
+
+.features__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $base_black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-size) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+}
+
+.features__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-dark;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-size) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-size) {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
