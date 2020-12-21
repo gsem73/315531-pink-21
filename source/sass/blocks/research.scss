@@ -18,13 +18,12 @@
       content: "";
       display: block;
       width: 238px;
-      height: 268px;
+      height: 266px;
       background-image: url("../img/timer.svg");
       background-position: center;
-      background-size: 100% 100%;
+      background-size: 238px 276px;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      align-self: center;
     }
 
     @media (min-width: $desktop-size) {
