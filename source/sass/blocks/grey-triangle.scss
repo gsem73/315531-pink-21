@@ -1,0 +1,18 @@
+.grey-triangle {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  background-color: $base-grey;
+  background-image: url("../img/polygon.svg");
+  padding-top: 50px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 116px;
+    padding-bottom: 99px;
+  }
+}
