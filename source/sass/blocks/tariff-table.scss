@@ -182,3 +182,11 @@
     justify-content: center;
   }
 }
+
+.tariff-table__toggle {
+  margin-top: 32px;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
+}
