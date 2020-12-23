@@ -5,15 +5,15 @@
   background-color: $base-grey;
   background-image: url("../img/polygon.svg");
   padding-top: 50px;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-size) {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 67px;
   }
 
   @media (min-width: $desktop-size) {
     padding-top: 116px;
-    padding-bottom: 99px;
+    padding-bottom: 97px;
   }
 }

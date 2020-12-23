@@ -322,17 +322,17 @@
         </div>
       </section>
 
-      <section>
-        <div> <!--Этот div обрежем с помощью clip-path-->
+      <section class="contact">
+        <div class="contact__text">
           <div class="container">
-            <h2 class="base-caption">Остались вопросы?<br>Свяжитесь с нами!</h2>
-            <div class="contact">
+            <h2 class="contact__caption base-caption">Остались вопросы?<br>Свяжитесь с нами!</h2>
+            <div class="contact__option">
               <div class="contact__phone">
                 <p class="contact__title">Звоните:</p>
                 <a class="contact__value" href="tel:+78125556666">+7 (812) 555-66-66</a>
               </div>
               <div class="contact__email">
-                <p class="contact__title">Пишите</p>
+                <p class="contact__title">Пишите:</p>
                 <a class="contact__value"  href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="contact__addr">
@@ -342,7 +342,13 @@
             </div>
           </div>
         </div>
-        <img class="map-widget" src="https://via.placeholder.com/1200x800" alt="">
+        <div class="contact__map">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/map-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/map-tablet.png">
+            <img class="contact__map-preview" src="img/map-mobile.png" alt="">
+          </picture>
+        </div>
       </section>
 
     </main>
