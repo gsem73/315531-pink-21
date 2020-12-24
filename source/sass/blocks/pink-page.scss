@@ -1,0 +1,23 @@
+.pink-page {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pink-page__header {
+  z-index: 2;
+}
+
+.pink-page__main {
+  z-index: 1;
+  margin-top: -67px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: -111px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: -110px;
+  }
+}

@@ -10,11 +10,15 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  margin-right: 15px;
   color: $base-dark;
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .copyright__icon {
   display: block;
-  width: 100%;
-  height: auto;
 }

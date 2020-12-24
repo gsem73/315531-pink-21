@@ -1,13 +1,18 @@
 .review {
-  padding-top: 20px;
-  padding-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "message-area" "control-area";
+  padding: 8px 0 25px;
+
+
+  @media (min-width: $tablet-size) {
+    padding: 8px 0 0;
+  }
 
   @media (min-width: $desktop-size) {
     grid-template-columns: 60px 1fr 60px;
     grid-template-areas: "prev-area message-area next-area";
+    padding: 8px 0;
   }
 }
 
@@ -17,25 +22,34 @@
   margin: 0;
 }
 
-.review__item {
-  padding: 0;
-  margin: 0;
-}
 
 .review__message {
   grid-area: message-area;
   padding: 0;
   margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-size) {
+    padding-bottom: 22px;
+  }
 }
 
 .review__link {
   text-align: center;
   order: 1;
+  margin-top: 25px;
 
   @media (min-width: $tablet-size) {
     order: 2;
+    margin-top: 18px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 19px;
+    margin-bottom: 4px;
   }
 }
 
@@ -83,10 +97,21 @@
   color: $base-dark;
   text-align: center;
   order: 2;
+  margin-top: 14px;
 
   @media (min-width: $tablet-size) {
     font-size: 18px;
     order: 1;
+    margin-top: 29px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 138px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 26px;
   }
 }
 
@@ -95,7 +120,13 @@
   justify-self: center;
   align-self: center;
 
+  @media (min-width: $tablet-size) {
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-size) {
+    padding-top: 27px;
     display: none;
   }
 }
@@ -103,10 +134,14 @@
 .review__prev-button {
   grid-area: prev-area;
   display: none;
-  justify-self: center;
+  justify-self: start;
   align-self: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 
   @media (min-width: $desktop-size) {
+    margin-top: 78px;
     display: block;
   }
 }
@@ -114,10 +149,14 @@
 .review__next-button {
   grid-area: next-area;
   display: none;
-  justify-self: center;
+  justify-self: end;
   align-self: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
 
   @media (min-width: $desktop-size) {
+    margin-top: 78px;
     display: block;
   }
 }

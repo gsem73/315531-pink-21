@@ -6,5 +6,23 @@
 }
 
 .social__item:not(:last-child) {
-  margin-right: 14px;
+  margin-right: 9px;
+
+  @media (min-width: $desktop-size) {
+    margin-right: 6px;
+  }
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba($base-dark, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon {
+  display: block;
 }

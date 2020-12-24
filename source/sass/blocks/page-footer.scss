@@ -2,21 +2,52 @@
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  min-height: 264px;
+
 
   @media (min-width: $tablet-size) {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
     grid-template-columns: repeat(3, 1fr);
+    min-height: 87px;
+  }
+
+  @media (min-width: $desktop-size) {
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    min-height: 157px;
   }
 }
 
 .page-footer__logo {
+  align-self: end;
+  padding-bottom: 16px;
+
   @media (min-width: $tablet-size) {
     justify-self: start;
+    align-self: center;
+    padding-bottom: 10px;
   }
 }
 
+.page-footer__social {
+  align-self: center;
+}
+
 .page-footer__copyright {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  padding-bottom: 8px;
+
   @media (min-width: $tablet-size) {
+    padding: 0;
+    margin: 0;
     justify-self: end;
+    align-self: center;
   }
 }

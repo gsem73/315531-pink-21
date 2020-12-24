@@ -1,30 +1,104 @@
 .tariff-table {
   border-collapse: collapse;
   width: 300%;
+  transform: translateX(calc(-100% / 3));
 
   @media (min-width: $tablet-size) {
     width: 100%;
+    transform: none;
   }
 }
 
 .tariff-table__col-title {
   background-color: $base-dark;
-  padding: 24px 20px;
+  padding-top: 12px;
+  padding-bottom: 32px;
   border: 1px solid $special_grey;
+  position: relative;
+
+  @media (min-width: $tablet-size) {
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
 }
 
+.tariff-table__hit-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
 
-.tariff-table__row-title {
+
+  @media (min-width: $tablet-size) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+.tariff-table__corner {
+  background-color: $base-grey;
+  padding-top: 8px;
   display: none;
 
   @media (min-width: $tablet-size) {
     display: table-cell;
   }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 0;
+  }
+}
+
+.tariff-table__row-title {
+  background-color: $base-white;
+  padding-top: 8px;
+  display: none;
+  border: 1px solid $special_grey;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 7px;
+    display: table-cell;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 0;
+  }
 }
 
 .tariff-table__cell {
-  padding: 24px 20px;
+  background-color: $base-white;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid $special_grey;
+  width: calc(100% / 3);
+
+  @media (min-width: $tablet-size) {
+    width: 25%;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .tariff-table__name {
@@ -38,6 +112,11 @@
   color: $base-white;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .tariff-table__price {
@@ -45,12 +124,17 @@
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
   text-transform: uppercase;
   color: $base-white;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-size) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 
@@ -62,6 +146,17 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $base-dark;
+
+  @media (min-width: $tablet-size) {
+    text-transform: none;
+    padding-left: 16px;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
 }
 
 .tariff-table__content {
@@ -85,5 +180,13 @@
 
   @media (min-width: $tablet-size) {
     justify-content: center;
+  }
+}
+
+.tariff-table__toggle {
+  margin-top: 32px;
+
+  @media (min-width: $tablet-size) {
+    display: none;
   }
 }

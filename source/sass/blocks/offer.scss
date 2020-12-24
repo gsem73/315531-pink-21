@@ -1,3 +1,22 @@
+.offer__caption {
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 47px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: 62px;
+    padding-bottom: 50px;
+  }
+}
+
 .offer__content {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
   background-color: $base-grey;
+  background-image: url("../img/polygon.svg");
 }

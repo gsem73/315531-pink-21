@@ -1,40 +1,54 @@
 .intro {
-  padding-top: 20px;
-  background-color: $base-dark;
-  background-image: url("../img/back-mobile.jpg");
+  background-color: $special-dark;
+  background-image: none;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.intro__caption {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  color: $base-white;
-  min-height: 160px;
-  width: 100%;
+  background-position: 50% 100%, 50% 0;
+  background-size: auto, cover;
+  min-height: 733px;
 
   @media (min-width: $tablet-size) {
-    width: 50%;
-    font-size: 40px;
-    line-height: 48px;
+    background-image: url("../img/hand-tablet.png"), url("../img/dark-city-tablet.png");
+    min-height: 729px;
   }
 
   @media (min-width: $desktop-size) {
-    font-size: 50px;
-    line-height: 68px;
-    width: calc(100% / 3);
+    background-image: url("../img/hand-desktop.png"), url("../img/dark-city-desktop.png");
+    min-height: 853px;
   }
 }
 
-.intro__content {
-  background-color: $special-dark;
+.intro__first-part {
+  padding-top: $mobile-menu-height;
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 50% 0;
+  background-size: auto, cover;
+  background-image: url("../img/hand-mobile.png"), url("../img/dark-city-mobile.png");
+  min-height: 393px;
 
   @media (min-width: $tablet-size) {
-    background-color: transparent;
+    padding-top: $tablet-menu-height;
+    background-image: none;
+    min-height: 0;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-top: $desktop-menu-height;
+    background-image: none;
+    min-height: 0;
+  }
+}
+
+.intro__caption,
+.intro__content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

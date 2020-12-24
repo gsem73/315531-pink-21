@@ -1,9 +1,72 @@
 .contact {
+  min-height: 614px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-size) {
+    min-height: 779px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-height: 867px;
+  }
+}
+
+.contact__text {
+  min-height: 444px;
+  z-index: 2;
+  background-color: $base-white;
+  clip-path: polygon(0 0, 0 calc(100% - 33px), 50% 100%, 100% calc(100% - 33px), 100% 0);
+
+  @media (min-width: $tablet-size) {
+    min-height: 474px;
+    clip-path: polygon(0 0, 0 calc(100% - 68px), 50% 100%, 100% calc(100% - 68px), 100% 0);
+  }
+
+  @media (min-width: $desktop-size) {
+    min-height: 468px;
+    clip-path: polygon(0 0, 0 calc(100% - 103px), 50% 100%, 100% calc(100% - 103px), 100% 0);
+  }
+}
+
+.contact__caption {
+  margin-top: 41px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 45px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+.contact__map {
+  min-height: 200px;
+  z-index: 1;
+  margin-top: -33px;
+
+  @media (min-width: $tablet-size) {
+    min-height: 374px;
+    margin-top: -68px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-height: 502px;
+    margin-top: -103px;
+  }
+}
+
+.contact__option {
   display: grid;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-size) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   @media (min-width: $desktop-size) {
@@ -14,40 +77,52 @@
 .contact__phone {
   grid-column: span 1;
   order: 1;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-size) {
     order: 1;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-size) {
     order: 1;
+    margin-bottom: 0;
   }
 }
 
 .contact__email {
   order: 2;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-size) {
     order: 2;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-size) {
     order: 3;
+    margin-bottom: 0;
   }
 }
 
 .contact__addr {
   grid-column: span 1;
   order: 3;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-size) {
     grid-column: span 2;
     order: 3;
+    margin-top: 22px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-size) {
     grid-column: span 1;
     order: 2;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -59,6 +134,18 @@
   line-height: 25px;
   color: $base-dark;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .contact__value {
@@ -71,14 +158,29 @@
   color: $base-red;
   text-decoration: none;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 
   &:hover {
     text-decoration: underline;
     color: $base-dark;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &:active {
     text-decoration: none;
     color: rgba($base-dark, 0.3);
+    margin-top: 0;
+    margin-bottom: 0;
   }
+}
+
+.contact__map-preview {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
