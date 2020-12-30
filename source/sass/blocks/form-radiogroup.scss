@@ -3,25 +3,62 @@
   background-color: $base-grey;
   padding: 0;
   margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 90px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-size) {
     background-color: transparent;
     border: 2px solid $base-grey;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 43px;
+    padding-bottom: 48px;
   }
 
+  @media (min-width: $desktop-size) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
-  &__legend {
-    @include form-label;
+.form-radiogroup__legend {
+  @include form-label;
+  position: relative;
+  top: 56px;
+  text-align: center;
+
+  @media (min-width: $tablet-size) {
+    position: static;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  @media (min-width: $desktop-size) {
+    padding-left: 25px;
+    padding-right: 25px;
   }
+}
 
-  &__item {
-    margin-top: 47px;
-    margin-bottom: 47px;
+.form-radiogroup__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  @media (min-width: $desktop-size) {
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 43px;
+    padding-bottom: 50px;
   }
 }

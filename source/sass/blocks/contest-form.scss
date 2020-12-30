@@ -17,42 +17,117 @@
       "achievement-area achievement-area"
       "message-area message-area"
       "button-area comment-area";
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-size) {
     grid-template-columns: 1fr 1fr;
+    row-gap: 57px;
+    column-gap: 70px;
     grid-template-areas: "participant-area platform-area"
       "contact-area contact-area"
       "achievement-area achievement-area"
       "message-area message-area"
       "button-area comment-area";
+    margin-bottom: -3px;
   }
 }
 
 .contest-form__participant {
   grid-area: participant-area;
+
+  @media (min-width: $desktop-size) {
+    margin: 10px 0;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 15px 0 0;
+  }
 }
 
 .contest-form__achievement {
   grid-area: achievement-area;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 0;
+  }
 }
 
 .contest-form__contact {
   grid-area: contact-area;
+  margin-top: 37px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 0;
+  }
 }
 
 .contest-form__platform {
   grid-area: platform-area;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 0;
+  }
 }
 
 .contest-form__message {
   grid-area: message-area;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 58px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 0;
+  }
 }
 
 .contest-form__button {
   grid-area: button-area;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $tablet-size) {
+    justify-self: start;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 8px;
+  }
 }
 
 .contest-form__comment {
   grid-area: comment-area;
+  margin-top: 39px;
+  margin-bottom: 24px;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-self: end;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin: 0;
+    margin-top: 8px;
+  }
 }
