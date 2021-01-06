@@ -101,6 +101,7 @@
   grid-area: button-area;
   justify-self: center;
   align-self: center;
+  max-width: 300px;
 
   @media (min-width: $tablet-size) {
     justify-self: start;

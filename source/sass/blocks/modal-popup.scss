@@ -1,0 +1,126 @@
+.modal-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  box-sizing: border-box;
+  background-color: $base-white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+  width: 320px;
+  transform: translateY(calc(50vh - 50%));
+  z-index: 999;
+
+  @media (min-width: $tablet-size) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 780px;
+  }
+}
+
+.modal-popup--show {
+  display: block;
+}
+
+.modal-popup__compact-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-size) {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 200px;
+    padding-right: 200px;
+    min-height: 172px;
+  }
+}
+
+.modal-popup__full-container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-size) {
+    padding-left: 66px;
+    padding-right: 66px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+.modal-popup__compact-panel {
+  padding: 8px 20px 52px;
+
+  @media (min-width: $tablet-size) {
+    padding: 4px 82px 52px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding: 52px 240px 52px;
+    background-color: $base-grey;
+  }
+}
+
+.modal-popup__full-panel {
+  padding: 52px 20px;
+  background-color: $base-grey;
+
+  @media (min-width: $tablet-size) {
+    padding: 52px 82px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding: 52px 160px;
+  }
+}
+
+.modal-popup__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-black;
+  margin-top: 38px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-size) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal-popup__message {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $base-dark;
+  margin-top: 18px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-size) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 18px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 18px;
+    margin-bottom: 36px;
+  }
+}

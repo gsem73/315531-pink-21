@@ -128,7 +128,7 @@
                 <div class="form-edit form-edit--tall">
                   <label class="form-edit__label" for="phone">Номер телефона</label>
                   <div class="form-edit__combo">
-                    <input class="form-edit__input" type="tel" id="phone" name="phone" value="" placeholder="Номер, пожалуйста">
+                    <input class="form-edit__input form-edit__input--tel" type="tel" id="phone" name="phone" value="" placeholder="Номер, пожалуйста">
                     <button class="form-edit__button" type="button">
                       <svg width="20" height="19">
                         <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -141,7 +141,7 @@
                 <div class="form-fieldset__item form-edit form-edit--tall">
                   <label class="form-edit__label" for="email">Адрес почты</label>
                   <div class="form-edit__combo">
-                    <input class="form-edit__input" type="email" id="email" name="email" value="" placeholder="Введите почту *">
+                    <input class="form-edit__input form-edit__input--email" type="email" id="email" name="email" value="" placeholder="Введите почту *">
                     <button class="form-edit__button" type="button">
                       <svg width="18" height="13">
                         <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -182,6 +182,7 @@
             <dt class="form-term__name">*</dt>
             <dd class="form-term__def"> — обязательные <span  class="form-term__detail"> для заполнения </span> поля</dd>
           </dl>
+
         </form>
       </div>
 
@@ -231,6 +232,28 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal-popup modal-popup--failure">
+      <div class="modal-popup__compact-container">
+        <h2 class="modal-popup__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal-popup__message">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+      </div>
+      <div class="modal-popup__compact-panel">
+        <button class="modal-popup__close-button form-button" type="button">Ок</button>
+      </div>
+    </section>
+
+    <section class="modal-popup modal-popup--success">
+      <div class="modal-popup__full-container">
+        <h2 class="modal-popup__title">Ваша заявка отправлена</h2>
+        <p class="modal-popup__message">Спасибо за&nbsp;ваше участие, ваша заявка уже поступила к&nbsp;нам. В ближайшее время&nbsp;мы рассмотрим ее и оповестим&nbsp;вас.</p>
+      </div>
+      <div class="modal-popup__full-panel">
+        <button class="modal-popup__close-button form-button" type="button">Закрыть окно</button>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
