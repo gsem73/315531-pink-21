@@ -41,6 +41,19 @@
   margin: 0;
   padding: 13px 20px 18px;
 
+  &:hover {
+    border: 2px solid $base-dark;
+  }
+
+  &:active {
+    border: 2px solid $base-red;
+  }
+
+  &:focus {
+    border: 2px solid $base-red;
+    outline: none;
+  }
+
   &::placeholder {
     line-height: 30px;
   }

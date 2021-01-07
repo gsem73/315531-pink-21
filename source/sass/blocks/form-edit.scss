@@ -59,6 +59,19 @@
   flex-grow: 1;
   width: 80%;
   padding: 17px 20px 18px;
+
+  &:hover {
+    border: 2px solid $base-dark;
+  }
+
+  &:active {
+    border: 2px solid $base-red;
+  }
+
+  &:focus {
+    border: 2px solid $base-red;
+    outline: none;
+  }
 }
 
 .form-edit__button {
