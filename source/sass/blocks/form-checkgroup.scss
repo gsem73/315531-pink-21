@@ -3,15 +3,39 @@
   background-color: $base-grey;
   padding: 0;
   margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 75px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-size) {
     background-color: transparent;
     border: 2px solid $base-grey;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 24px;
+    padding-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-bottom: 34px;
   }
 }
 
 .form-checkgroup__legend {
   @include form-label;
+  position: relative;
+  top: 56px;
+  text-align: center;
+
+  @media (min-width: $tablet-size) {
+    position: static;
+    padding: 0 25px;
+  }
 }
 
 .form-checkgroup__list {
@@ -20,9 +44,14 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 3px;
 
   @media (min-width: $desktop-size) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    row-gap: 3px;
+    column-gap: 55px;
   }
 }
 

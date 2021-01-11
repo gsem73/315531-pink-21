@@ -1,5 +1,7 @@
 .text-content {
-  min-height: 150px;
+  min-height: 131px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .text-content__paragraph {
@@ -11,15 +13,30 @@
   text-align: center;
   color: $base-dark;
   padding: 0;
+  margin: 0;
+  margin-top: 34px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-size) {
     font-size: 18px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 81px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-size) {
     padding-left: 80px;
     padding-right: 80px;
+    margin-top: 81px;
+    margin-bottom: 61px;
+  }
+}
+
+.text-content__optional {
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: inline;
   }
 }

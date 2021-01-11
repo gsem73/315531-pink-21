@@ -4,9 +4,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  box-sizing: border-box;
+  width: 100%;
   text-transform: uppercase;
   color: $base-white;
-  padding: 23px 45px;
+  padding: 20px 45px 21px;
   background-color: $base-green;
   border: 2px solid $base-green;
   border-radius: 1px;

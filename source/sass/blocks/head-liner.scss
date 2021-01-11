@@ -1,11 +1,27 @@
 .head-liner {
-  min-height: 170px;
-  padding: 20px;
-  background-color: $base-dark;
-  background-image: url("../img/back-mobile.jpg");
+  min-height: 217px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $special-dark;
+  background-image: url("../img/dark-city-mobile.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 0;
   background-size: cover;
+
+  @media (min-width: $tablet-size) {
+    min-height: 420px;
+    background-position: 50% 0;
+    background-image: url("../img/dark-city-tablet.png");
+    background-size: auto;
+  }
+
+
+  @media (min-width: $desktop-size) {
+    min-height: 374px;
+    background-position: 50% 0;
+    background-image: url("../img/dark-city-desktop.png");
+    background-size: auto;
+  }
 }
 
 .head-liner__title {
@@ -16,9 +32,17 @@
   line-height: 33px;
   text-align: center;
   color: $base-white;
+  margin-top: 84px;
 
   @media (min-width: $tablet-size) {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 166px;
+  }
+
+  @media (min-width: $desktop-size) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-top: 159px;
   }
 }

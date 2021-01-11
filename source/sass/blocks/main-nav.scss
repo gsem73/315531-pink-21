@@ -149,18 +149,48 @@
   font-size: 18px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-top: 19px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  border-bottom: 2px solid transparent;
 
+  &:hover {
+    color: $base-red;
+  }
+
+  &:active {
+    color: rgba($base-red, 0.3);
+  }
 
   @media (min-width: $tablet-size) {
     padding-top: 21px;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
+    border-bottom: 2px solid transparent;
   }
 
   @media (min-width: $desktop-size) {
     font-weight: normal;
     text-transform: none;
     margin-left: 80px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-bottom: 2px solid transparent;
+
+    &:active {
+      color: rgba($base-white, 0.3);
+    }
+  }
+
+  &--selected {
+    @media (min-width: $desktop-size) {
+      border-bottom: 2px solid $base-white;
+
+      &:hover {
+        color: $base-white;
+      }
+
+      &:active {
+        color: $base-white;
+      }
+    }
   }
 }

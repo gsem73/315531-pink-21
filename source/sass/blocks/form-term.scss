@@ -1,10 +1,16 @@
 .form-term {
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .form-term__name {
   @include form-label;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-right: 4px;
 }
 
 .form-term__def {
@@ -16,4 +22,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+.form-term__detail {
+  display: none;
+
+  @media (min-width: $desktop-size) {
+    display: inline;
+  }
 }

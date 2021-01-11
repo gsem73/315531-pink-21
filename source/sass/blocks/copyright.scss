@@ -21,4 +21,14 @@
 
 .copyright__icon {
   display: block;
+  fill: $base-red;
+
+  &:hover {
+    fill: $base-dark;
+  }
+
+  &:active {
+    fill: $base-dark;
+    opacity: 0.3;
+  }
 }

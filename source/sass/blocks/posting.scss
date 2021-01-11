@@ -1,3 +1,15 @@
+.posting {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 18px;
+  }
+}
+
 .posting__content {
   background-color: $base-grey;
   padding: 10px;
