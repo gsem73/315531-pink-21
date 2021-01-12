@@ -2,21 +2,37 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 18px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 
   @media (min-width: $tablet-size) {
+    margin-top: 50px;
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
   }
 
   @media (min-width: $desktop-size) {
+    margin-top: 49px;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 54px;
+    column-gap: 20px;
   }
 }
 
 .posting-list__item {
   padding: 0;
   margin: 0;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-size) {
+    padding-bottom: 22px;
+    box-sizing: border-box;
+    min-height: 455px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-height: 555px;
+  }
 }

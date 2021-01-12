@@ -1,8 +1,8 @@
 .range-control {
   display: block;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 36px;
+  margin-bottom: 36px;
   //-webkit-appearance: none;
   background-color: transparent;
 
@@ -23,5 +23,10 @@
 
   &::-moz-range-track {
     @include range-track;
+  }
+
+  @media (min-width: $tablet-size) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

@@ -1,0 +1,18 @@
+.gallery-comment {
+  padding-top: 44px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 90px;
+    padding-bottom: 73px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 90px;
+    padding-bottom: 72px;
+  }
+}

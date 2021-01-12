@@ -53,25 +53,38 @@
         </div>
       </div>
 
-      <div class="text-content">
-        <div class="container">
-          <p class="text-content__paragraph">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
+      <div class="container">
+        <div class="gallery-comment">
+          <p class="base-text">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</p>
         </div>
       </div>
 
-      <div class="posting">
-        <a class="posting__link" href="#">
-          <img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
+      <div class="panorama">
+        <div class="container">
+          <div class="panorama__border">
+            <p class="panorama__label">Панорама дня</p>
+          </div>
+        </div>
+        <a class="panorama__link" href="#">
+          <picture>
+            <source media="(min-width:960px)" srcset="img/panorama-desktop.jpg">
+            <source media="(min-width:660px)" srcset="img/panorama-tablet.jpg">
+            <img class="panorama__photo" src="img/panorama-mobile.jpg" alt="Панорама дня">
+          </picture>
         </a>
         <div class="container">
-          <div class="posting__content">
-            <p class="posting__label">Панорама дня</p>
-            <p class="posting__legend">
-              <span class="posting__user">Анна</span>
-              <span class="posting__datetime">(5 минут назад)</span>
+          <div class="panorama__content">
+            <p class="panorama__legend">
+              <span class="panorama__user">Анна</span>
+              <span class="panorama__datetime">(5 минут назад)</span>
             </p>
-            <p class="posting__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="posting__like">Нравится: 215</p>
+            <p class="panorama__message">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="panorama__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+              <p class="panorama__like">Нравится: 215</p>
+            </div>
           </div>
         </div>
       </div>
@@ -79,98 +92,176 @@
       <div class="container">
         <ul class="posting-list">
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Левон</span>
-                <span class="posting__datetime">(5 часов назад)</span>
-              </p>
-              <p class="posting__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-1-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-1-tablet.jpg">
+                <img class="posting__photo" src="img/photo-1-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Левон</span>
+              <span class="posting__datetime">(5 часов назад)</span>
+            </p>
+            <p class="posting__message">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 356</p>
             </div>
           </li>
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div  class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Антон</span>
-                <span class="posting__datetime">(12 часов назад)</span>
-              </p>
-              <p class="posting__message">Соседи будут рады!</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-2-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-2-tablet.jpg">
+                <img class="posting__photo" src="img/photo-2-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Антон</span>
+              <span class="posting__datetime">(12 часов назад)</span>
+            </p>
+            <p class="posting__message">Соседи будут рады!</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 666</p>
             </div>
           </li>
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div  class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Борис</span>
-                <span class="posting__datetime">(20 часов назад)</span>
-              </p>
-              <p class="posting__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-3-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-3-tablet.jpg">
+                <img class="posting__photo" src="img/photo-3-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Борис</span>
+              <span class="posting__datetime">(20 часов назад)</span>
+            </p>
+            <p class="posting__message">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 215</p>
             </div>
           </li>
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div  class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Сергей</span>
-                <span class="posting__datetime">(25 часов назад)</span>
-              </p>
-              <p class="posting__message">Самая кубанская в мире!</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-4-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-4-tablet.jpg">
+                <img class="posting__photo" src="img/photo-4-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Сергей</span>
+              <span class="posting__datetime">(25 часов назад)</span>
+            </p>
+            <p class="posting__message">Самая кубанская в мире!</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 4</p>
             </div>
           </li>
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div  class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Максим</span>
-                <span class="posting__datetime">(40 часов назад)</span>
-              </p>
-              <p class="posting__message">Где снег-то?</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-5-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-5-tablet.jpg">
+                <img class="posting__photo" src="img/photo-5-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Максим</span>
+              <span class="posting__datetime">(40 часов назад)</span>
+            </p>
+            <p class="posting__message">Где снег-то?</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 150</p>
             </div>
           </li>
           <li class="posting-list__item posting">
-            <a class="posting__link" href="#"><img class="posting__photo" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото"></a>
-            <div  class="posting__content">
-              <p class="posting__legend">
-                <span class="posting__user">Надежда</span>
-                <span class="posting__datetime">(45 часов назад)</span>
-              </p>
-              <p class="posting__message">Всем GM и взаимные лайки!</p>
+            <a class="posting__link" href="#">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/photo-6-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/photo-6-tablet.jpg">
+                <img class="posting__photo" src="img/photo-6-mobile.jpg" alt="Фото">
+              </picture>
+            </a>
+            <p class="posting__legend">
+              <span class="posting__user">Надежда</span>
+              <span class="posting__datetime">(45 часов назад)</span>
+            </p>
+            <p class="posting__message">Всем GM и взаимные лайки!</p>
+            <div class="posting__prefer">
+              <svg width="13" height="12">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
               <p class="posting__like">Нравится: 2560</p>
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="text-content">
-        <div class="container">
-          <p class="text-content__paragraph">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="container">
+        <div class="editor-comment">
+          <p class="base-text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </div>
 
-
-      <div class="container">
-        <form class="image-editor" method="get" action="https://echo.htmlacademy.ru">
-          <img class="image-editor__preview" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото">
-          <fieldset class="image-editor__tools tools">
-            <label class="tools__clipping-label" for="clipping">Обрезка</label>
-            <input class="tools__clipping-range range-control" type="range" id="clipping" name="clipping" min="0" max="100">
-            <label class="tools__brightness-label" for="brightness">Яркость</label>
-            <input class="tools__brightness-range range-control" type="range" id="brightness" name="brightness" min="0" max="100">
-            <label class="tools__contrast-label" for="contrast">Контрастность</label>
-            <input class="tools__contrast-range range-control" type="range" id="contrast" name="contrast" min="0" max="100">
-          </fieldset>
-          <fieldset class="image-editor__button posting-control">
-            <button class="posting-control__item posting-button posting-button--submit" type="submit">Запостить</button>
-            <button class="posting-control__item posting-button posting-button--cancel" type="button">Отмена</button>
-          </fieldset>
-        </form>
+      <div class="image-editor">
+        <div class="container">
+          <form class="image-editor__form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="image-editor__preview">
+              <picture>
+                <source media="(min-width:960px)" srcset="img/preview-desktop.jpg">
+                <source media="(min-width:660px)" srcset="img/preview-tablet.jpg">
+                <img class="image-editor__img" src="img/preview-mobile.jpg" alt="Предварительный просмотр редактора изображений">
+              </picture>
+            </div>
+            <fieldset class="image-editor__tools">
+              <div class="tools">
+                <label class="tools__label tools__label--active tools__clipping-label" for="clipping">
+                  <svg class="tools__icon tools__icon--active" width="44" height="44">
+                    <use xlink:href="img/sprite.svg#icon-crop"></use>
+                  </svg>
+                </label>
+                <input class="tools__clipping-range range-control" type="range" id="clipping" name="clipping" min="0" max="100" value="85">
+                <label class="tools__label tools__brightness-label" for="brightness">
+                  <svg class="tools__icon" width="48" height="43">
+                    <use xlink:href="img/sprite.svg#icon-fill"></use>
+                  </svg>
+                </label>
+                <input class="tools__brightness-range range-control" type="range" id="brightness" name="brightness" min="0" max="100">
+                <label class="tools__label tools__contrast-label" for="contrast">
+                  <svg class="tools__icon" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                  </svg>
+                </label>
+                <input class="tools__contrast-range range-control" type="range" id="contrast" name="contrast" min="0" max="100">
+              </div>
+            </fieldset>
+            <fieldset class="image-editor__button">
+              <div class="posting-control">
+                <button class="posting-control__item posting-button posting-button--submit" type="submit">Запостить</button>
+                <button class="posting-control__item posting-button posting-button--cancel" type="button">Отмена</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
+
 
     </main>
 

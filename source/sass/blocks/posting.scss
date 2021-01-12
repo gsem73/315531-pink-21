@@ -1,40 +1,8 @@
 .posting {
-  margin-top: 10px;
-
-  @media (min-width: $tablet-size) {
-    margin-top: 5px;
-  }
-
-  @media (min-width: $desktop-size) {
-    margin-top: 18px;
-  }
-}
-
-.posting__content {
   background-color: $base-grey;
-  padding: 10px;
   position: relative;
-}
-
-.posting__link {
-  display: block;
-}
-
-.posting__label {
-  position: absolute;
-  top: -160px;
-  right: 0;
-  padding: 14px 20px;
-  margin: 0;
-  background-color: $base-red;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $base-white;
+  display: flex;
+  flex-direction: column;
 }
 
 .posting__photo {
@@ -42,6 +10,30 @@
   height: 180px;
   object-fit: cover;
   display: block;
+
+  @media (min-width: $tablet-size) {
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-size) {
+    height: 400px;
+  }
+}
+
+.posting__legend {
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-size) {
+    margin-left: 30px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-left: 28px;
+  }
 }
 
 .posting__user {
@@ -70,6 +62,41 @@
   font-size: 14px;
   line-height: 24px;
   color: $base-dark;
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-size) {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-left: 28px;
+  }
+}
+
+.posting__prefer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+  margin-top: auto;
+
+  @media (min-width: $tablet-size) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-left: 28px;
+  }
 }
 
 .posting__like {
@@ -80,5 +107,11 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $base-red;
+  padding: 0;
   margin: 0;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-size) {
+    margin-left: 0;
+  }
 }

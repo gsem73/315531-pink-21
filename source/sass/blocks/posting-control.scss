@@ -1,18 +1,33 @@
 .posting-control {
   display: flex;
   flex-direction: column;
-  padding-top: 26px;
-  padding-bottom: 26px;
   border: none;
   justify-content: center;
   align-items: center;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-size) {
+    padding-top: 84px;
+    padding-left: 14px;
+  }
 
   @media (min-width: $desktop-size) {
     flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 32px;
+    padding-left: 0;
+    justify-content: space-between;
   }
 }
 
 .posting-control__item {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-size) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-right: 0;
+  }
 }

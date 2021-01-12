@@ -1,5 +1,22 @@
 .image-editor {
   background-color: $base-grey;
+  min-height: 759px;
+
+  @media (min-width: $tablet-size) {
+    min-height: 511px;
+  }
+
+  @media (min-width: $desktop-size) {
+    min-height: 514px;
+    background-color: transparent;
+    padding-bottom: 26px;
+  }
+}
+
+.image-editor__form {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "preview-area" "tools-area" "button-area";
@@ -7,22 +24,74 @@
   @media (min-width: $tablet-size) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "preview-area tools-area" "preview-area button-area";
+    column-gap: 20px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-size) {
+    grid-template-columns: 50% 50%;
+    background-color: $base-grey;
+    gap: 0;
   }
 }
 
 .image-editor__preview {
-  display: block;
-  margin: 0 auto;
   grid-area: preview-area;
+  height: 374px;
+
+  @media (min-width: $tablet-size) {
+    height: 400px;
+    margin-top: 27px;
+  }
+
+  @media (min-width: $desktop-size) {
+    height: 400px;
+    width: 300px;
+    justify-self: center;
+    margin-right: 10px;
+    margin-bottom: 56px;
+  }
+}
+
+.image-editor__img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .image-editor__tools {
   border: none;
-  display: flex;
-  flex-direction: column;
   grid-area: tools-area;
+  padding: 0;
+  margin: 0;
+  margin-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 24px;
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 24px;
+    padding-left: 0;
+    padding-right: 90px;
+  }
 }
 
 .image-editor__button {
   grid-area: button-area;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  @media (min-width: $desktop-size) {
+    align-self: end;
+    padding-right: 60px;
+  }
 }

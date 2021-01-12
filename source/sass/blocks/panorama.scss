@@ -1,0 +1,144 @@
+.panorama {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-size) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-size) {
+    margin-top: 18px;
+  }
+}
+
+.panorama__content {
+  background-color: $base-grey;
+  display: grid;
+  grid-template-areas: "user-area" "text-area" "like-area";
+  padding: 18px 10px 18px 18px;
+
+  @media (min-width: $tablet-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "user-area like-area" "text-area text-area";
+    padding: 24px 30px 24px 30px;
+  }
+}
+
+.panorama__link {
+  display: block;
+}
+
+.panorama__border {
+  position: relative;
+}
+
+.panorama__label {
+  position: absolute;
+  right: 0;
+  padding: 6px 20px;
+  margin: 0;
+  background-color: $base-red;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-white;
+  top: 0;
+
+  @media (min-width: $tablet-size) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-size) {
+    top: 54px;
+  }
+}
+
+.panorama__photo {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  height: 137px;
+
+  @media (min-width: $tablet-size) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-size) {
+    height: 506px;
+  }
+}
+
+.panorama__legend {
+  grid-area: user-area;
+  padding: 0;
+  margin: 0;
+}
+
+.panorama__user {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-dark;
+}
+
+.panorama__datetime {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-dark;
+}
+
+.panorama__message {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-dark;
+  grid-area: text-area;
+  padding: 0;
+  margin: 0;
+}
+
+.panorama__prefer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-area: like-area;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-size) {
+    justify-self: end;
+    align-self: center;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+}
+
+.panorama__like {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-red;
+  padding: 0;
+  margin: 0;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-size) {
+    margin-right: 18px;
+    margin-left: 0;
+  }
+}
