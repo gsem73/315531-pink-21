@@ -3,16 +3,29 @@
   background-image: none;
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 0;
-  background-size: auto, cover;
   min-height: 733px;
 
-  @media (min-width: $tablet-size) {
+  @media (min-width: $tablet-size) and (min-resolution: 1dppx) {
+    background-size: 620px 619px, cover;
     background-image: url("../img/hand-tablet.png"), url("../img/dark-city-tablet.png");
     min-height: 729px;
   }
 
-  @media (min-width: $desktop-size) {
+  @media (min-width: $desktop-size) and (min-resolution: 1dppx) {
+    background-size: 940px 744px, cover;
     background-image: url("../img/hand-desktop.png"), url("../img/dark-city-desktop.png");
+    min-height: 853px;
+  }
+
+  @media (min-width: $tablet-size) and (min-resolution: 2dppx) {
+    background-size: 620px 619px, cover;
+    background-image: url("../img/hand-tablet@2x.png"), url("../img/dark-city-tablet@2x.png");
+    min-height: 729px;
+  }
+
+  @media (min-width: $desktop-size) and (min-resolution: 2dppx) {
+    background-size: 940px 744px, cover;
+    background-image: url("../img/hand-desktop@2x.png"), url("../img/dark-city-desktop@2x.png");
     min-height: 853px;
   }
 }
@@ -21,9 +34,13 @@
   padding-top: $mobile-menu-height;
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 0;
-  background-size: auto, cover;
+  background-size: 320px 287px, cover;
   background-image: url("../img/hand-mobile.png"), url("../img/dark-city-mobile.png");
   min-height: 393px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png"), url("../img/dark-city-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-size) {
     padding-top: $tablet-menu-height;
