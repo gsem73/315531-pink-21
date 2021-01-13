@@ -1,5 +1,8 @@
 .pink-logo {
   display: block;
+}
+
+.pink-logo--light {
   width: 74px;
   height: 24px;
 
@@ -11,5 +14,58 @@
   @media (min-width: $desktop-size) {
     width: 147px;
     height: 56px;
+  }
+}
+
+.pink-logo--dark {
+  width: 145px;
+  height: 40px;
+
+  @media (min-width: $tablet-size) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-size) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+
+.pink-logo__mobile {
+  display: block;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
+}
+
+.pink-logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-size) {
+    display: none;
+  }
+}
+
+
+.pink-logo__desktop {
+  display: none;
+
+  @media (min-width: $tablet-size) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-size) {
+    display: block;
   }
 }
