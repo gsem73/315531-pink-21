@@ -8,19 +8,30 @@
   background-position: 50% 0;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/dark-city-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-size) {
     min-height: 420px;
     background-position: 50% 0;
     background-image: url("../img/dark-city-tablet.png");
-    background-size: auto;
+    background-size: 1200px 729px;
   }
 
+  @media (min-width: $tablet-size) and (min-resolution: 2dppx) {
+    background-image: url("../img/dark-city-tablet@2x.png");
+  }
 
   @media (min-width: $desktop-size) {
     min-height: 374px;
     background-position: 50% 0;
     background-image: url("../img/dark-city-desktop.png");
-    background-size: auto;
+    background-size: 2560px 853px;
+  }
+
+  @media (min-width: $desktop-size) and (min-resolution: 2dppx) {
+    background-image: url("../img/dark-city-desktop@2x.png");
   }
 }
 
