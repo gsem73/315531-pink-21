@@ -7,6 +7,11 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const del = require("del");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify-es").default;
+const svgstore = require("gulp-svgstore");
+const imagemin = require("gulp-imagemin");
 
 // Styles
 
@@ -26,6 +31,90 @@ const styles = () => {
 }
 
 exports.styles = styles;
+
+// Clean
+
+const clean = () => {
+  return del("build");
+};
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    "source/css/style.min.css",
+    "source/img/*.{jpg,png,svg,webp}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+    done();
+}
+
+exports.copy = copy;
+
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+// Images
+
+const images = () => {
+  return gulp.src(["build/img/*.{png,jpg,svg}", "!build/img/sprite.svg"])
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.images = images;
+
+
+// JavaScript
+
+const js = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/icon/*.svg")
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+}
+
+exports.sprite = sprite;
+
+// Build
+
+const build = gulp.series(
+  gulp.parallel(
+    styles,
+    sprite
+  ),
+  clean,
+  gulp.parallel(
+    html,
+    copy,
+    js
+  )
+);
+
+exports.build = build;
 
 // Server
 
@@ -51,5 +140,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher
+  build, server, watcher
 );
