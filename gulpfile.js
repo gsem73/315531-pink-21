@@ -94,7 +94,7 @@ const sprite = () => {
   return gulp.src("source/img/icon/*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
@@ -102,14 +102,12 @@ exports.sprite = sprite;
 // Build
 
 const build = gulp.series(
-  gulp.parallel(
-    styles,
-    sprite
-  ),
+  styles,
   clean,
   gulp.parallel(
     html,
     copy,
+    sprite,
     js
   )
 );
@@ -121,7 +119,7 @@ exports.build = build;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
