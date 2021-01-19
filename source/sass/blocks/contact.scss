@@ -45,17 +45,18 @@
 }
 
 .contact__map {
-  min-height: 200px;
+  height: 200px;
+  width: 100%;
   z-index: 1;
   margin-top: -33px;
 
   @media (min-width: $tablet-size) {
-    min-height: 374px;
+    height: 374px;
     margin-top: -68px;
   }
 
   @media (min-width: $desktop-size) {
-    min-height: 502px;
+    height: 502px;
     margin-top: -103px;
   }
 }
