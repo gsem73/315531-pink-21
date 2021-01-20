@@ -21,10 +21,18 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
-      csso()
+      autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+
+const css = () => {
+  return gulp.src("source/css/style.css")
+    .pipe(postcss([
+      csso()
+    ]))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(sync.stream());
@@ -43,7 +51,7 @@ const clean = () => {
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/css/style.min.css",
+    "source/css/*.css",
     "source/img/*.{jpg,png,svg,webp}",
   ], {
     base: "source"
@@ -103,6 +111,7 @@ exports.sprite = sprite;
 
 const build = gulp.series(
   styles,
+  css,
   clean,
   gulp.parallel(
     html,
