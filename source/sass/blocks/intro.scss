@@ -30,6 +30,10 @@
   }
 }
 
+.intro__wrapper {
+  @include wrapper;
+}
+
 .intro__first-part {
   padding-top: $mobile-menu-height;
   background-repeat: no-repeat;

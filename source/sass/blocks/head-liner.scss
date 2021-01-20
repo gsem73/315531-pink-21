@@ -35,6 +35,10 @@
   }
 }
 
+.head-liner__wrapper {
+  @include wrapper;
+}
+
 .head-liner__title {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;

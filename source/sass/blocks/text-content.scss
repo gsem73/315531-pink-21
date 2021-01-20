@@ -4,6 +4,10 @@
   padding-bottom: 10px;
 }
 
+.text-content__wrapper {
+  @include wrapper;
+}
+
 .text-content__paragraph {
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;

@@ -68,6 +68,10 @@
   }
 }
 
+.main-nav__wrapper {
+  @include wrapper;
+}
+
 .main-nav__layout {
   display: grid;
   grid-template-rows: minmax($mobile-menu-height, max-content) auto;
@@ -118,6 +122,7 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   border-top: 1px solid $base-black;
 
   @media (min-width: $desktop-size) {

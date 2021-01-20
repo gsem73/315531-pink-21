@@ -10,6 +10,10 @@
   }
 }
 
+.panorama__wrapper {
+  @include wrapper;
+}
+
 .panorama__content {
   background-color: $base-grey;
   display: grid;
