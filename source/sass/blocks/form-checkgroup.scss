@@ -48,8 +48,6 @@
 
   @media (min-width: $desktop-size) {
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
     row-gap: 3px;
     column-gap: 55px;
   }
@@ -59,4 +57,51 @@
   box-sizing: border-box;
   padding-top: 18px;
   padding-bottom: 18px;
+
+
+  @media (min-width: $desktop-size) {
+
+    &:nth-child(1) {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &:nth-child(2) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    &:nth-child(3) {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    &:nth-child(4) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    &:nth-child(5) {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    &:nth-child(6) {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+  }
 }

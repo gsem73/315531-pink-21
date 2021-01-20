@@ -17,25 +17,28 @@
 }
 
 .contact__text {
-  min-height: 444px;
+  min-height: 404px;
   z-index: 2;
   background-color: $base-white;
   clip-path: polygon(0 0, 0 calc(100% - 33px), 50% 100%, 100% calc(100% - 33px), 100% 0);
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-size) {
-    min-height: 474px;
+    min-height: 414px;
     clip-path: polygon(0 0, 0 calc(100% - 68px), 50% 100%, 100% calc(100% - 68px), 100% 0);
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-size) {
-    min-height: 468px;
+    min-height: 368px;
     clip-path: polygon(0 0, 0 calc(100% - 103px), 50% 100%, 100% calc(100% - 103px), 100% 0);
+    padding-bottom: 100px;
   }
 }
 
 .contact__caption {
   margin-top: 41px;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-size) {
     margin-top: 45px;
@@ -82,7 +85,7 @@
 .contact__phone {
   grid-column: span 1;
   order: 1;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-size) {
     order: 1;
