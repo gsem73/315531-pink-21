@@ -13,6 +13,10 @@
   }
 }
 
+.offer__wrapper {
+  @include wrapper;
+}
+
 .offer__content {
   background-repeat: no-repeat;
   background-position: 50% 0;

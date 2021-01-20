@@ -27,3 +27,22 @@
   height: 2px;
   background-color: $base-dark;
 }
+
+@mixin wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: $mobile-content;
+  max-width: $desktop-content;
+
+  @media (min-width: $tablet-size) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-size) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

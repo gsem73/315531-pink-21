@@ -68,6 +68,10 @@
   }
 }
 
+.main-nav__wrapper {
+  @include wrapper;
+}
+
 .main-nav__layout {
   display: grid;
   grid-template-rows: minmax($mobile-menu-height, max-content) auto;

@@ -12,6 +12,10 @@
   }
 }
 
+.contact_wrapper {
+  @include wrapper;
+}
+
 .contact__text {
   min-height: 444px;
   z-index: 2;
