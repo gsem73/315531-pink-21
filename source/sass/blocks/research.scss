@@ -96,6 +96,16 @@
   text-decoration: underline;
   color: $base-red;
 
+  &:hover {
+    text-decoration: underline;
+    color: $base-dark;
+  }
+
+  &:active {
+    text-decoration: none;
+    color: rgba($base-dark, 0.3);
+  }
+
   @media (min-width: $desktop-size) {
     font-size: 18px;
     line-height: 30px;

@@ -29,4 +29,12 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  &:active::-webkit-slider-thumb {
+    background-color: $base-red;
+  }
+
+  &:active::-moz-range-thumb {
+    background-color: $base-red;
+  }
 }
