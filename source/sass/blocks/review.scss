@@ -160,3 +160,17 @@
     display: block;
   }
 }
+
+.review__icon {
+  display: block;
+  fill: $base-dark;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}

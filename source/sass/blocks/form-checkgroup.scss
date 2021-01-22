@@ -103,3 +103,40 @@
     }
   }
 }
+
+.form-checkgroup__label {
+  display: inline-flex;
+  align-items: center;
+
+  @include form-text;
+
+  &::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 2px solid $special-grey;
+    border-radius: 1px;
+    margin-right: 20px;
+    background-color: $base-white;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  &:hover::before {
+    border: 2px solid $base-dark;
+  }
+
+  &:active::before {
+    border: 2px solid $base-red;
+  }
+}
+
+.form-checkgroup__input:checked + .form-checkgroup__label::before {
+  background-image: url("../img/tick.svg");
+}
+
+.form-checkgroup__input:focus + .form-checkgroup__label::before {
+  outline: 1px solid  $base-red;
+}

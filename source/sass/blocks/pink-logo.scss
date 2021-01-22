@@ -5,6 +5,16 @@
 .pink-logo--light {
   width: 74px;
   height: 24px;
+  fill: $base-white;
+
+  &:hover {
+    fill: $base-red;
+  }
+
+  &:active {
+    fill: $base-white;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-size) {
     width: 145px;
@@ -20,6 +30,17 @@
 .pink-logo--dark {
   width: 145px;
   height: 40px;
+  fill: $base-dark;
+
+  &:hover {
+    fill: $base-red;
+  }
+
+  &:active {
+    fill: $base-dark;
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $tablet-size) {
     width: 145px;
